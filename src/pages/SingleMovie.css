@@ -1,0 +1,31 @@
+
+.container-single-movie{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-single-movie{
+    max-width: 350px;
+}
+
+.img-single-movie img{
+    width: 100%;
+}
+
+.text-content{
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.text-content p{
+    text-align: justify;
+}

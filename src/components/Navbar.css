@@ -1,0 +1,70 @@
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+h1 a{
+    color: #fff;
+}
+
+.orange{
+    color: orange;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form input{
+    width: 350px;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 5x;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+input::placeholder{
+    font-size: .8rem;
+    opacity: .5;
+    color: #fff;
+}
+form button{
+    margin-left: 2px;
+    color: #fff;
+    display: flex;
+    font-size: 2rem;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .5s normal;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+}
+
+
+@media screen and (max-width:640px){
+    nav{
+        flex-direction: column;
+    }
+    form{
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:410px){
+   
+    form{
+        margin: 0 10px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+
+
+.p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    font-size: 1.2rem;
+}
+p{
+    background-color: transparent;
+}
+.divs h2{
+    background: transparent;
+    color: #010101;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        padding: 20px;
+        flex-direction: column;
+    }
+}
