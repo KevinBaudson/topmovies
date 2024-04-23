@@ -11,7 +11,7 @@ const Footer = () => {
               <p>Sugestões</p>
               <p>Nossas redes sociais</p>
             </div>
-            <div className='divs'>
+            <div className='div-footer'>
               <h2>As melhores sugestões de filmes você só encontra aqui!</h2>
             </div>
 
