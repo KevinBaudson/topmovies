@@ -35,4 +35,9 @@ p{
         padding: 20px;
         flex-direction: column;
     }
+    .footer .divs{
+        max-width: 150px;
+        max-height: 150px;
+        padding: 10px;
+    }
 }

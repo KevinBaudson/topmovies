@@ -28,7 +28,7 @@ register()
 
 const Home = () => {
   const[moviesBetter, setMoviesBetter] = useState([]);
-  const[video,setVideo] = useState([])
+  const[slidePerView,setSlidePerView] = useState(2)
   
   const getMoviesBetter = async () =>{
     const res = await fetch(`${url}${key}`)
@@ -42,8 +42,23 @@ const Home = () => {
  
   useEffect(()=>{
     getMoviesBetter()
+
   },[])
  
+  useEffect(()=>{
+    function handleResize(){
+      if(window.innerWidth < 720){
+        setSlidePerView(2)
+      }else{
+        setSlidePerView(5)
+      }
+    }
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return()=>{
+      window.removeEventListener("resize", handleResize)
+    }
+  },[])
   
   return (
     
@@ -52,7 +67,7 @@ const Home = () => {
       <section id='container'>
         {moviesBetter === 0 && <p>Carregando Filmes...</p>}
       <Swiper
-      slidesPerView={5}
+      slidesPerView={slidePerView}
       spaceBetween={10}
       autoplay={{
         delay: 2500,

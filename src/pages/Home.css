@@ -88,4 +88,7 @@
   .containers{
     flex-direction: column;
   }
+  .content-text{
+    margin-bottom: 50px;
+  }
 }
