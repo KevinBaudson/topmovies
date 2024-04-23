@@ -41,6 +41,7 @@ const Search = () => {
     <div>
       <Link to="/"><button className='btn-voltar'><FaArrowCircleLeft size={50} /></button></Link>
       <h1 className='title'>Resultados para : {query}</h1>
+      {movies.length === 0 && <p>Carregando...</p>}
       <div className="container">
         <div className="cards">
             {movies.map((movie)=>(

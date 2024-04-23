@@ -31,6 +31,7 @@ const SingleMovie = () => {
 
   return (
    <div className="container-single-movie">
+    {singleMovie.length === 0 && <p>Carregando...</p>}
     {singleMovie && (
       <>
         <Link to="/">
